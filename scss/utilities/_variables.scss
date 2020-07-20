@@ -3,48 +3,51 @@ $font-stack: 'Lato', sans-serif;
 $brdr-rad: 5px;
 $trans: all .2s ease-in-out;
 
-// Colors
+// Descriptive Base Colors
+
+$purple-mountain-majesty: #927bc1;
+$coral: #fd7856;
+$french-lilac: #deb2ee;
+$anakiwa: #7ee6fd;
+$vista-blue: #88d9a0;
+$fountain-blue: #4da2bb;
+$sea-pink: #ec9fa3;
+$vivid-tangerine: #fd9f85;
+$sunglo: #e4757a;
+$emerald: #63cc82;
+$malibu: #51ddfc;
+$riptide: #80e8d1;
+
+// Color Usage
+
 $color-white: #fff;
 $color-grey: #777;
-$color-primary: #51ddfc;
+$color-primary: $malibu;
 $color-secondary: #58e1c1;
-
-$bg-color-01: #927bc1;
-$bg-color-02: #fd7856;
-$bg-color-03: #deb2ee;
-$bg-color-04: #7ee6fd;
-$bg-color-05: #88d9a0;
-$bg-color-06: #4da2bb;
-$bg-color-07: #ec9fa3;
-$bg-color-08: #fd9f85;
-$bg-color-09: #e4757a;
-$bg-color-10: #63cc82;
-$bg-color-11: $color-primary;
-$bg-color-12: #80e8d1;
 
 // Grid bg colors map
 $themes: (
-  '1': $bg-color-01,
-  '2': $bg-color-02,
-  '3': $bg-color-03,
-  '4': $bg-color-04,
-  '5': $bg-color-05,
-  '6': $bg-color-06,
-  '7': $bg-color-07,
-  '8': $bg-color-08,
-  '9': $bg-color-09,
-  '10': $bg-color-10,
-  '11': $bg-color-11,
-  '12': $bg-color-12,
+  '1': $purple-mountain-majesty,
+  '2': $coral,
+  '3': $french-lilac,
+  '4': $anakiwa,
+  '5': $vista-blue,
+  '6': $fountain-blue,
+  '7': $sea-pink,
+  '8': $vivid-tangerine,
+  '9': $sunglo,
+  '10': $emerald,
+  '11': $malibu,
+  '12': $riptide,
 );
 
 // Buttons bg color map
 $buttons: (
-  'default': $bg-color-11,
-  'success': $bg-color-10,
-  'error': #e4757a,
-  'warning': $bg-color-02,
-  'info': $bg-color-01,
+  'default': $malibu,
+  'success': $emerald,
+  'error': $sunglo,
+  'warning': $coral,
+  'info': $purple-mountain-majesty,
 );
 
 // Media query breakpoints
