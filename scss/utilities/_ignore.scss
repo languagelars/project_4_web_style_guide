@@ -1,0 +1,24 @@
+// Overkill media query mixin (not used in this project!)
+
+$breakpoints: (
+  'xs': 575px,
+  'sm': 576px,
+  'med': 768px,
+  'lg': 992px
+);
+
+@mixin mq($break) {
+  $value: map-get($breakpoints, $break);
+  $sm: map-get($breakpoints, 'sm');
+
+  @if $value < $sm {
+    @media (max-width: $value) {
+      @content;
+    }
+  }
+  @else {
+    @media (min-width: $value) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+$website-width: 1400px;
+$font-stack: 'Lato', sans-serif;
+$brdr-rad: 5px;
+$trans: all .2s ease-in-out;
+
+// Colors
+$color-white: #fff;
+$color-grey: #777;
+$color-primary: #51ddfc;
+$color-secondary: #58e1c1;
+
+$bg-color-01: #927bc1;
+$bg-color-02: #fd7856;
+$bg-color-03: #deb2ee;
+$bg-color-04: #7ee6fd;
+$bg-color-05: #88d9a0;
+$bg-color-06: #4da2bb;
+$bg-color-07: #ec9fa3;
+$bg-color-08: #fd9f85;
+$bg-color-09: #e4757a;
+$bg-color-10: #63cc82;
+$bg-color-11: $color-primary;
+$bg-color-12: #80e8d1;
+
+// Grid bg colors map
+$themes: (
+  '1': $bg-color-01,
+  '2': $bg-color-02,
+  '3': $bg-color-03,
+  '4': $bg-color-04,
+  '5': $bg-color-05,
+  '6': $bg-color-06,
+  '7': $bg-color-07,
+  '8': $bg-color-08,
+  '9': $bg-color-09,
+  '10': $bg-color-10,
+  '11': $bg-color-11,
+  '12': $bg-color-12,
+);
+
+// Buttons bg color map
+$buttons: (
+  'default': $bg-color-11,
+  'success': $bg-color-10,
+  'error': #e4757a,
+  'warning': $bg-color-02,
+  'info': $bg-color-01,
+);
+
+// Media query breakpoints
+$xs: 575px;
+$sm: 576px;
+$med: 768px;
+$lg: 992px;

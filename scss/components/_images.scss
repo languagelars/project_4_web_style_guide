@@ -1,0 +1,20 @@
+%blocky {
+  @include blocky;
+  margin-top: 10px;
+  max-width: 100%;
+};
+
+.img-avatar {
+  @extend %blocky;
+  max-height: 100%;
+}
+
+.img-frame {
+  @extend %blocky;
+  padding: 13px;
+  border: 1px solid #ccc;
+}
+
+.img-logo {
+  @include blocky;
+}

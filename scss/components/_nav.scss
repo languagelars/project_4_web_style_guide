@@ -1,0 +1,32 @@
+.nav {
+  padding-left: 0;
+  @include flexy($dir: column) {
+    flex-basis: 100%;
+  }
+
+  // Media query
+  @include media($med) {
+    @include flexy($dir: row, $just: flex-end) {
+      align-items: center;
+    }
+  }
+
+  &-link {
+    text-align: center;
+    border-radius: $brdr-rad;
+    padding: 10px 0;
+    @include blocky($marg-l: null, $marg-r: null);
+    width: 100%;
+    transition: $trans;
+
+    // Media query
+    @include media($med) {
+      flex-basis: 100px;
+    }
+    
+    &:hover {
+      color: $color-white;
+      background-color: $color-secondary;
+    }
+  }
+}

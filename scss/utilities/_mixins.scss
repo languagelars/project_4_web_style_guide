@@ -1,0 +1,31 @@
+// Flexbox mixin
+@mixin flexy(
+  $disp: flex, 
+  $dir: null,
+  $wrap: null,
+  $just: null) {
+    display: $disp;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+    justify-content: $just;
+    @content;
+}
+
+// Display block mixin
+@mixin blocky(
+  $disp: block,
+  $marg-l: auto,
+  $marg-r: auto,) {
+    display: $disp;
+    margin-left: $marg-l;
+    margin-right: $marg-r;
+    @content;
+  }
+;
+
+// Media query mixin
+@mixin media($break) {
+  @media(min-width: $break) {
+    @content;
+  }
+}

@@ -1,0 +1,59 @@
+.container {
+  padding: 0 10px;
+
+  // Media query
+  @include media($med) {
+    max-width: $website-width;
+    @include blocky;
+  }
+}
+
+.row {
+  @include flexy($dir: column);
+  padding: 1em 10px;
+
+  // Media query
+  @include media($med) {
+    @include flexy($disp: null, $dir: row);
+    @for $i from 1 through 12 {
+      .col-#{$i} {
+        flex-basis: ($i / 12) * 100%
+      }
+    }
+  }
+}
+
+@include media($med) {
+  .centered {
+    @include blocky;
+  }
+  [class^=col] + [class^=col] {
+    margin-left: 10px;
+  }
+}
+
+[class^=col] {
+  margin-top: 10px;
+  flex-basis: 100%;
+  min-height: 25px;
+  padding: 10px;
+  border-radius: $brdr-rad;
+  
+  // Media query
+  @include media($med) {
+    margin-top: 0;
+    @include flexy($just: center) {
+      align-items: center;
+    }
+  }
+}
+
+@each $i, $bg-color in $themes {
+  .theme.col-#{$i} {
+    background-color: $bg-color;
+  }
+}
+
+.card {
+  flex-basis: 100%;
+}

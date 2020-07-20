@@ -1,0 +1,31 @@
+.btn {
+  margin-top: 15px;
+  width: 100%;
+  color: $color-white;
+  border: none;
+  padding: 10px 0;
+  text-transform: uppercase;
+  border-radius: $brdr-rad;
+  transition: $trans;
+  cursor: pointer;
+
+  // Media query
+  @include media($med) {
+    padding: 10px 30px;
+
+    & + & {
+      margin-left: 10px;
+    }
+  }
+
+  @each $value, $color in $buttons {
+    &.#{$value} {
+      background-color: $color;
+  
+      &:hover {
+        background-color: lighten($color, 15%);
+      }
+    }
+  }
+}
+

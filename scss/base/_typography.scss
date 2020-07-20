@@ -1,0 +1,45 @@
+* {
+  font-family: $font-stack;
+  color: $color-grey;
+}
+
+p {
+  line-height: 1.45em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.headline {
+  &-primary {
+    color: $color-secondary;
+    margin-left: 10px;
+  }
+  &-secondary {
+    color: $color-grey;
+    font-weight: 300;
+  }
+}
+
+.link {
+  color: $color-primary;
+  font-weight: 700;
+}
+
+.blockquote {
+  font-size: 1.5em;
+  font-weight: 300;
+  font-style: italic;
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 8px solid $color-secondary;
+  border-radius: $brdr-rad;
+}
+
+@include media($med) {
+  .logo {
+    margin-left: initial;
+    margin-right: initial;
+  }
+}
